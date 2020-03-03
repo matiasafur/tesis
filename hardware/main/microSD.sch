@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L symbols:Micro_SD_holder XS1
+U 1 1 5E7F716D
+P 6900 3900
+F 0 "XS1" H 6750 4450 50  0000 L CNN
+F 1 "Micro_SD_holder" H 6200 3350 50  0000 L CNN
+F 2 "" H 7050 3400 10  0001 C CNN
+F 3 "" H 6750 3250 10  0001 C CNN
+	1    6900 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 3600 0    50   Input ~ 0
+SD_CS
+Text HLabel 4300 4100 0    50   Output ~ 0
+SD_MISO
+Text HLabel 4300 3700 0    50   Input ~ 0
+SD_MOSI
+Text HLabel 4300 3900 0    50   Input ~ 0
+SD_CLK
+Wire Wire Line
+	4300 3600 5650 3600
+Wire Wire Line
+	4300 3700 5350 3700
+Wire Wire Line
+	4300 3900 6100 3900
+Wire Wire Line
+	4300 4100 5050 4100
+$Comp
+L symbols:R R9
+U 1 1 5E7F7755
+P 5650 3050
+F 0 "R9" H 5720 3096 50  0000 L CNN
+F 1 "50K" H 5720 3005 50  0000 L CNN
+F 2 "symbols:R_0805" V 5580 3050 50  0001 C CNN
+F 3 "~" H 5650 3050 50  0001 C CNN
+	1    5650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:R R8
+U 1 1 5E7F77D9
+P 5350 3050
+F 0 "R8" H 5420 3096 50  0000 L CNN
+F 1 "50K" H 5420 3005 50  0000 L CNN
+F 2 "symbols:R_0805" V 5280 3050 50  0001 C CNN
+F 3 "~" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:R R7
+U 1 1 5E7F77F9
+P 5050 3050
+F 0 "R7" H 5120 3096 50  0000 L CNN
+F 1 "50K" H 5120 3005 50  0000 L CNN
+F 2 "symbols:R_0805" V 4980 3050 50  0001 C CNN
+F 3 "~" H 5050 3050 50  0001 C CNN
+	1    5050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:+3V3 #PWR023
+U 1 1 5E7F79FC
+P 5050 2700
+F 0 "#PWR023" H 5050 2550 50  0001 C CNN
+F 1 "+3V3" H 5065 2873 50  0000 C CNN
+F 2 "" H 5050 2700 50  0001 C CNN
+F 3 "" H 5050 2700 50  0001 C CNN
+	1    5050 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2700 5050 2800
+Wire Wire Line
+	5050 2800 5350 2800
+Wire Wire Line
+	5350 2800 5350 2900
+Connection ~ 5050 2800
+Wire Wire Line
+	5050 2800 5050 2900
+Wire Wire Line
+	5350 2800 5650 2800
+Wire Wire Line
+	5650 2800 5650 2900
+Connection ~ 5350 2800
+$Comp
+L symbols:+3V3 #PWR024
+U 1 1 5E7F7AC4
+P 6000 2700
+F 0 "#PWR024" H 6000 2550 50  0001 C CNN
+F 1 "+3V3" H 6015 2873 50  0000 C CNN
+F 2 "" H 6000 2700 50  0001 C CNN
+F 3 "" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6100 3800
+Wire Wire Line
+	6000 2700 6000 2800
+$Comp
+L symbols:GND #PWR025
+U 1 1 5E7F81A2
+P 6000 4350
+F 0 "#PWR025" H 6000 4100 50  0001 C CNN
+F 1 "GND" H 6005 4177 50  0000 C CNN
+F 2 "" H 6000 4350 50  0001 C CNN
+F 3 "" H 6000 4350 50  0001 C CNN
+	1    6000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4350 6000 4000
+Wire Wire Line
+	6000 4000 6100 4000
+Wire Wire Line
+	5650 3200 5650 3600
+Connection ~ 5650 3600
+Wire Wire Line
+	5650 3600 6100 3600
+Wire Wire Line
+	5350 3200 5350 3700
+Connection ~ 5350 3700
+Wire Wire Line
+	5350 3700 6100 3700
+Wire Wire Line
+	5050 3200 5050 4100
+Connection ~ 5050 4100
+Wire Wire Line
+	5050 4100 6100 4100
+$Comp
+L symbols:C C14
+U 1 1 5E7F8751
+P 6300 3050
+F 0 "C14" H 6415 3096 50  0000 L CNN
+F 1 "100nF" H 6415 3005 50  0000 L CNN
+F 2 "symbols:C_0805" H 6338 2900 50  0001 C CNN
+F 3 "~" H 6300 3050 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:GND #PWR026
+U 1 1 5E7F89B6
+P 6300 3200
+F 0 "#PWR026" H 6300 2950 50  0001 C CNN
+F 1 "GND" H 6450 3150 50  0000 C CNN
+F 2 "" H 6300 3200 50  0001 C CNN
+F 3 "" H 6300 3200 50  0001 C CNN
+	1    6300 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2900 6300 2800
+Wire Wire Line
+	6300 2800 6000 2800
+Connection ~ 6000 2800
+Wire Wire Line
+	6000 2800 6000 3800
+NoConn ~ 6100 3500
+NoConn ~ 6100 4200
+NoConn ~ 6100 4300
+Wire Wire Line
+	7100 3200 7100 3050
+Wire Wire Line
+	7100 3050 7500 3050
+Wire Wire Line
+	7500 3050 7500 3200
+Wire Wire Line
+	7500 3050 7900 3050
+Wire Wire Line
+	7900 3050 7900 4650
+Wire Wire Line
+	7900 4650 7500 4650
+Wire Wire Line
+	7500 4650 7500 4500
+Connection ~ 7500 3050
+Wire Wire Line
+	7500 4650 7100 4650
+Wire Wire Line
+	7100 4650 7100 4500
+Connection ~ 7500 4650
+$Comp
+L symbols:GND #PWR027
+U 1 1 5E501504
+P 7500 4800
+F 0 "#PWR027" H 7500 4550 50  0001 C CNN
+F 1 "GND" H 7505 4627 50  0000 C CNN
+F 2 "" H 7500 4800 50  0001 C CNN
+F 3 "" H 7500 4800 50  0001 C CNN
+	1    7500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4800 7500 4650
+$EndSCHEMATC

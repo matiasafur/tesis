@@ -1,0 +1,223 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L symbols:CH340G U8
+U 1 1 5E4C9BD9
+P 6250 3750
+F 0 "U8" H 6400 4300 50  0000 C CNN
+F 1 "CH340G" H 6400 3200 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6300 3200 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 5900 4550 50  0001 C CNN
+	1    6250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J7
+U 1 1 5E4C9BE0
+P 4800 3650
+F 0 "J7" H 4855 4117 50  0000 C CNN
+F 1 "USB_B_Micro" H 4855 4026 50  0000 C CNN
+F 2 "symbols:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 4950 3600 50  0001 C CNN
+F 3 "~" H 4950 3600 50  0001 C CNN
+	1    4800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:Crystal Y1
+U 1 1 5E4C9BE7
+P 5400 4400
+F 0 "Y1" H 5400 4668 50  0000 C CNN
+F 1 "12MHz" H 5400 4577 50  0000 C CNN
+F 2 "" H 5400 4400 50  0001 C CNN
+F 3 "~" H 5400 4400 50  0001 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C18
+U 1 1 5E4C9BEE
+P 5600 4750
+F 0 "C18" H 5600 4850 50  0000 L CNN
+F 1 "22pF" H 5600 4650 50  0000 L CNN
+F 2 "symbols:C_0805" H 5638 4600 50  0001 C CNN
+F 3 "~" H 5600 4750 50  0001 C CNN
+	1    5600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C17
+U 1 1 5E4C9BF5
+P 5200 4750
+F 0 "C17" H 5200 4850 50  0000 L CNN
+F 1 "22pF" H 5200 4650 50  0000 L CNN
+F 2 "symbols:C_0805" H 5238 4600 50  0001 C CNN
+F 3 "~" H 5200 4750 50  0001 C CNN
+	1    5200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4600 5600 4400
+Wire Wire Line
+	5600 4400 5550 4400
+Wire Wire Line
+	5200 4400 5250 4400
+Wire Wire Line
+	5200 4400 5200 4600
+Wire Wire Line
+	5600 4400 5600 4150
+Wire Wire Line
+	5600 4150 5850 4150
+Connection ~ 5600 4400
+Wire Wire Line
+	5850 3950 5200 3950
+Wire Wire Line
+	5200 3950 5200 4400
+Connection ~ 5200 4400
+Wire Wire Line
+	5100 3650 5850 3650
+Wire Wire Line
+	5850 3750 5100 3750
+Wire Wire Line
+	6150 3150 6150 3050
+Wire Wire Line
+	6150 3050 6250 3050
+Wire Wire Line
+	6250 3050 6250 3150
+$Comp
+L symbols:+3V3 #PWR036
+U 1 1 5E4DC940
+P 6250 2550
+F 0 "#PWR036" H 6250 2400 50  0001 C CNN
+F 1 "+3V3" H 6265 2723 50  0000 C CNN
+F 2 "" H 6250 2550 50  0001 C CNN
+F 3 "" H 6250 2550 50  0001 C CNN
+	1    6250 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5100 3850
+NoConn ~ 5100 3450
+NoConn ~ 5850 3450
+$Comp
+L symbols:C C19
+U 1 1 5E4DD2FF
+P 5900 2800
+F 0 "C19" H 6015 2846 50  0000 L CNN
+F 1 "10nF" H 6015 2755 50  0000 L CNN
+F 2 "symbols:C_0805" H 5938 2650 50  0001 C CNN
+F 3 "~" H 5900 2800 50  0001 C CNN
+	1    5900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:GND #PWR035
+U 1 1 5E4DD467
+P 5900 3000
+F 0 "#PWR035" H 5900 2750 50  0001 C CNN
+F 1 "GND" H 5905 2827 50  0000 C CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 3050
+Wire Wire Line
+	5900 3000 5900 2950
+Wire Wire Line
+	5900 2650 5900 2600
+$Comp
+L symbols:GND #PWR037
+U 1 1 5E4DEB57
+P 6250 4400
+F 0 "#PWR037" H 6250 4150 50  0001 C CNN
+F 1 "GND" H 6255 4227 50  0000 C CNN
+F 2 "" H 6250 4400 50  0001 C CNN
+F 3 "" H 6250 4400 50  0001 C CNN
+	1    6250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4400 6250 4350
+$Comp
+L symbols:GND #PWR034
+U 1 1 5E4DEC9F
+P 5600 4950
+F 0 "#PWR034" H 5600 4700 50  0001 C CNN
+F 1 "GND" H 5605 4777 50  0000 C CNN
+F 2 "" H 5600 4950 50  0001 C CNN
+F 3 "" H 5600 4950 50  0001 C CNN
+	1    5600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4950 5600 4900
+$Comp
+L symbols:GND #PWR033
+U 1 1 5E4DEE35
+P 5200 4950
+F 0 "#PWR033" H 5200 4700 50  0001 C CNN
+F 1 "GND" H 5205 4777 50  0000 C CNN
+F 2 "" H 5200 4950 50  0001 C CNN
+F 3 "" H 5200 4950 50  0001 C CNN
+	1    5200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4950 5200 4900
+$Comp
+L symbols:GND #PWR032
+U 1 1 5E4DF97D
+P 4800 4150
+F 0 "#PWR032" H 4800 3900 50  0001 C CNN
+F 1 "GND" H 4805 3977 50  0000 C CNN
+F 2 "" H 4800 4150 50  0001 C CNN
+F 3 "" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 4050 4800 4100
+Wire Wire Line
+	4800 4100 4700 4100
+Wire Wire Line
+	4700 4100 4700 4050
+Connection ~ 4800 4100
+Wire Wire Line
+	4800 4100 4800 4150
+Text HLabel 6950 3450 2    50   UnSpc ~ 0
+RXD
+Wire Wire Line
+	6950 3450 6650 3450
+Text HLabel 6950 3350 2    50   UnSpc ~ 0
+TXD
+Wire Wire Line
+	6950 3350 6650 3350
+NoConn ~ 6650 4150
+NoConn ~ 6650 4050
+NoConn ~ 6650 3950
+NoConn ~ 6650 3850
+NoConn ~ 6650 3750
+NoConn ~ 6650 3650
+Wire Wire Line
+	6250 2550 6250 2600
+Wire Wire Line
+	5900 2600 6250 2600
+Connection ~ 6250 2600
+Wire Wire Line
+	6250 2600 6250 3050
+Text Notes 5900 5000 0    50   ~ 0
+Cristal de cuarzo y capacitores monoliticos
+$EndSCHEMATC

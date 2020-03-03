@@ -1,0 +1,827 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L symbols:Screw_Terminal_01x02 J1
+U 1 1 5E4BEF6B
+P 3150 1700
+F 0 "J1" H 3070 1375 50  0000 C CNN
+F 1 "12V INPUT" H 3070 1466 50  0000 C CNN
+F 2 "symbols:TerminalBlock_bornier-2_P5.08mm" H 3150 1700 50  0001 C CNN
+F 3 "~" H 3150 1700 50  0001 C CNN
+	1    3150 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L symbols:GND #PWR01
+U 1 1 5E4C6939
+P 3450 2300
+F 0 "#PWR01" H 3450 2050 50  0001 C CNN
+F 1 "GND" H 3455 2127 50  0000 C CNN
+F 2 "" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	1    3450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1700 3450 1700
+Wire Wire Line
+	4750 1800 4650 1800
+$Comp
+L symbols:GND #PWR06
+U 1 1 5E4C6B9B
+P 5250 2300
+F 0 "#PWR06" H 5250 2050 50  0001 C CNN
+F 1 "GND" H 5255 2127 50  0000 C CNN
+F 2 "" H 5250 2300 50  0001 C CNN
+F 3 "" H 5250 2300 50  0001 C CNN
+	1    5250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C4
+U 1 1 5E4C7158
+P 4250 1850
+F 0 "C4" H 4365 1896 50  0000 L CNN
+F 1 "100nF" H 4365 1805 50  0000 L CNN
+F 2 "symbols:C_0805" H 4288 1700 50  0001 C CNN
+F 3 "~" H 4250 1850 50  0001 C CNN
+	1    4250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:CP C1
+U 1 1 5E4CB506
+P 3800 1850
+F 0 "C1" H 3918 1896 50  0000 L CNN
+F 1 "100uF 50V" H 3800 1750 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 3838 1700 50  0001 C CNN
+F 3 "~" H 3800 1850 50  0001 C CNN
+	1    3800 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1600 3800 1600
+Wire Wire Line
+	3800 1700 3800 1600
+Connection ~ 3800 1600
+Wire Wire Line
+	3800 1600 4250 1600
+Wire Wire Line
+	4250 1700 4250 1600
+Connection ~ 4250 1600
+Wire Wire Line
+	4250 1600 4750 1600
+$Comp
+L Device:D_Zener D1
+U 1 1 5E4D046E
+P 6000 2050
+F 0 "D1" V 5954 2129 50  0000 L CNN
+F 1 "SS34" V 6045 2129 50  0000 L CNN
+F 2 "symbols:D_3220_8050Metric_Pad2.65x5.15mm_HandSolder" H 6000 2050 50  0001 C CNN
+F 3 "~" H 6000 2050 50  0001 C CNN
+	1    6000 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L symbols:L L1
+U 1 1 5E4D0E16
+P 6350 1800
+F 0 "L1" V 6540 1800 50  0000 C CNN
+F 1 "47uH" V 6449 1800 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "~" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L symbols:CP C10
+U 1 1 5E4D1799
+P 6700 2050
+F 0 "C10" H 6818 2096 50  0000 L CNN
+F 1 "220uF 35V" H 6818 2005 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 6738 1900 50  0001 C CNN
+F 3 "~" H 6700 2050 50  0001 C CNN
+	1    6700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1700 3450 2250
+Wire Wire Line
+	5250 2000 5250 2250
+Wire Wire Line
+	4650 2250 5250 2250
+Wire Wire Line
+	4650 1800 4650 2250
+Connection ~ 5250 2250
+Wire Wire Line
+	5250 2250 5250 2300
+Wire Wire Line
+	4650 2250 4250 2250
+Wire Wire Line
+	4250 2000 4250 2250
+Connection ~ 4650 2250
+Wire Wire Line
+	4250 2250 3800 2250
+Wire Wire Line
+	3800 2000 3800 2250
+Connection ~ 4250 2250
+Wire Wire Line
+	3800 2250 3450 2250
+Connection ~ 3800 2250
+Connection ~ 3450 2250
+Wire Wire Line
+	3450 2250 3450 2300
+Wire Wire Line
+	5250 2250 6000 2250
+Wire Wire Line
+	6000 2250 6000 2200
+Wire Wire Line
+	6000 1900 6000 1800
+Wire Wire Line
+	6000 1800 5750 1800
+Wire Wire Line
+	6000 1800 6200 1800
+Connection ~ 6000 1800
+Wire Wire Line
+	6700 1900 6700 1800
+Wire Wire Line
+	6700 1800 6500 1800
+Wire Wire Line
+	6700 2200 6700 2250
+Connection ~ 6000 2250
+$Comp
+L symbols:R R3
+U 1 1 5E4DEBED
+P 9200 1850
+F 0 "R3" H 9270 1896 50  0000 L CNN
+F 1 "1K" H 9270 1805 50  0000 L CNN
+F 2 "symbols:R_0805" V 9130 1850 50  0001 C CNN
+F 3 "~" H 9200 1850 50  0001 C CNN
+	1    9200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1700 9200 1600
+$Comp
+L symbols:LED D4
+U 1 1 5E4DF582
+P 9200 2300
+F 0 "D4" V 9238 2183 50  0000 R CNN
+F 1 "LED_5V" V 9147 2183 50  0000 R CNN
+F 2 "symbols:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9200 2300 50  0001 C CNN
+F 3 "~" H 9200 2300 50  0001 C CNN
+	1    9200 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2150 9200 2000
+Wire Wire Line
+	9200 2500 9200 2450
+$Comp
+L symbols:PWR_FLAG #FLG02
+U 1 1 5E4E35F4
+P 7350 1700
+F 0 "#FLG02" H 7350 1775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 1874 50  0000 C CNN
+F 2 "" H 7350 1700 50  0001 C CNN
+F 3 "~" H 7350 1700 50  0001 C CNN
+	1    7350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1700 7350 1800
+Wire Wire Line
+	6000 2250 6700 2250
+Wire Wire Line
+	7350 1800 7000 1800
+$Comp
+L symbols:uA7805-Regulator_Linear U4
+U 1 1 5E5306A2
+P 5250 6200
+F 0 "U4" H 5250 6442 50  0000 C CNN
+F 1 "LM7805" H 5250 6351 50  0000 C CNN
+F 2 "" H 5275 6050 50  0001 L CIN
+F 3 "" H 5250 6150 50  0001 C CNN
+	1    5250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C7
+U 1 1 5E53711B
+P 4600 6450
+F 0 "C7" H 4715 6496 50  0000 L CNN
+F 1 "470nF" H 4715 6405 50  0000 L CNN
+F 2 "symbols:C_0805" H 4638 6300 50  0001 C CNN
+F 3 "~" H 4600 6450 50  0001 C CNN
+	1    4600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C8
+U 1 1 5E53716B
+P 5900 6450
+F 0 "C8" H 6015 6496 50  0000 L CNN
+F 1 "100nF" H 6015 6405 50  0000 L CNN
+F 2 "symbols:C_0805" H 5938 6300 50  0001 C CNN
+F 3 "~" H 5900 6450 50  0001 C CNN
+	1    5900 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:CP C9
+U 1 1 5E5371BB
+P 6350 6450
+F 0 "C9" H 6468 6496 50  0000 L CNN
+F 1 "33uF" H 6468 6405 50  0000 L CNN
+F 2 "symbols:CP_EIA-3528-12" H 6388 6300 50  0001 C CNN
+F 3 "~" H 6350 6450 50  0001 C CNN
+	1    6350 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6300 6350 6200
+Wire Wire Line
+	6350 6200 5900 6200
+Wire Wire Line
+	5900 6300 5900 6200
+Connection ~ 5900 6200
+Wire Wire Line
+	5900 6200 5550 6200
+Wire Wire Line
+	4600 6300 4600 6200
+Wire Wire Line
+	4600 6200 4950 6200
+Wire Wire Line
+	4600 6600 4600 6700
+Wire Wire Line
+	4600 6700 5250 6700
+Wire Wire Line
+	5250 6700 5250 6500
+Wire Wire Line
+	5250 6700 5900 6700
+Wire Wire Line
+	5900 6700 5900 6600
+Connection ~ 5250 6700
+Wire Wire Line
+	5900 6700 6350 6700
+Wire Wire Line
+	6350 6700 6350 6600
+Connection ~ 5900 6700
+$Comp
+L symbols:GND #PWR09
+U 1 1 5E543E47
+P 5250 6750
+F 0 "#PWR09" H 5250 6500 50  0001 C CNN
+F 1 "GND" H 5255 6577 50  0000 C CNN
+F 2 "" H 5250 6750 50  0001 C CNN
+F 3 "" H 5250 6750 50  0001 C CNN
+	1    5250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 6700 5250 6750
+$Comp
+L symbols:+12V #PWR02
+U 1 1 5E549D4D
+P 3800 1400
+F 0 "#PWR02" H 3800 1250 50  0001 C CNN
+F 1 "+12V" H 3815 1573 50  0000 C CNN
+F 2 "" H 3800 1400 50  0001 C CNN
+F 3 "" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:PWR_FLAG #FLG01
+U 1 1 5E54FC21
+P 4150 1400
+F 0 "#FLG01" H 4150 1475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4150 1574 50  0000 C CNN
+F 2 "" H 4150 1400 50  0001 C CNN
+F 3 "~" H 4150 1400 50  0001 C CNN
+	1    4150 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1500 3800 1500
+Wire Wire Line
+	3800 1500 3800 1600
+$Comp
+L symbols:+12V #PWR05
+U 1 1 5E55D423
+P 4600 6100
+F 0 "#PWR05" H 4600 5950 50  0001 C CNN
+F 1 "+12V" H 4615 6273 50  0000 C CNN
+F 2 "" H 4600 6100 50  0001 C CNN
+F 3 "" H 4600 6100 50  0001 C CNN
+	1    4600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6100 4600 6200
+Connection ~ 4600 6200
+Wire Wire Line
+	3800 1400 3800 1500
+Connection ~ 3800 1500
+Wire Wire Line
+	4150 1400 4150 1500
+$Comp
+L symbols:+5V #PWR010
+U 1 1 5E56A719
+P 6350 6100
+F 0 "#PWR010" H 6350 5950 50  0001 C CNN
+F 1 "+5V" H 6365 6273 50  0000 C CNN
+F 2 "" H 6350 6100 50  0001 C CNN
+F 3 "" H 6350 6100 50  0001 C CNN
+	1    6350 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 6100 6350 6200
+$Comp
+L symbols:+5VP #PWR011
+U 1 1 5E56E2EF
+P 7000 1600
+F 0 "#PWR011" H 7000 1450 50  0001 C CNN
+F 1 "+5VP" H 7015 1773 50  0000 C CNN
+F 2 "" H 7000 1600 50  0001 C CNN
+F 3 "" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 6200
+$Comp
+L symbols:LM2596S-ADJ U2
+U 1 1 5E589B3D
+P 5250 3250
+F 0 "U2" H 5250 3617 50  0000 C CNN
+F 1 "LM2596S-ADJ" H 5250 3526 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 3000 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:+4V #PWR013
+U 1 1 5E58D276
+P 7750 2650
+F 0 "#PWR013" H 7750 2500 50  0001 C CNN
+F 1 "+4V" H 7765 2823 50  0000 C CNN
+F 2 "" H 7750 2650 50  0001 C CNN
+F 3 "" H 7750 2650 50  0001 C CNN
+	1    7750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3350 4650 3350
+$Comp
+L symbols:C C5
+U 1 1 5E58E022
+P 4250 3400
+F 0 "C5" H 4365 3446 50  0000 L CNN
+F 1 "100nF" H 4365 3355 50  0000 L CNN
+F 2 "symbols:C_0805" H 4288 3250 50  0001 C CNN
+F 3 "~" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:CP C2
+U 1 1 5E58E029
+P 3800 3400
+F 0 "C2" H 3918 3446 50  0000 L CNN
+F 1 "100uF 50V" H 3800 3300 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 3838 3250 50  0001 C CNN
+F 3 "~" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3250 3800 3150
+Connection ~ 3800 3150
+Wire Wire Line
+	3800 3150 4250 3150
+Wire Wire Line
+	4250 3250 4250 3150
+Connection ~ 4250 3150
+Wire Wire Line
+	4250 3150 4750 3150
+Wire Wire Line
+	4650 3350 4650 3800
+Wire Wire Line
+	4650 3800 4250 3800
+Wire Wire Line
+	4250 3550 4250 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	4250 3800 3800 3800
+Wire Wire Line
+	3800 3550 3800 3800
+Connection ~ 4250 3800
+$Comp
+L symbols:+12V #PWR03
+U 1 1 5E58E041
+P 3800 2950
+F 0 "#PWR03" H 3800 2800 50  0001 C CNN
+F 1 "+12V" H 3815 3123 50  0000 C CNN
+F 2 "" H 3800 2950 50  0001 C CNN
+F 3 "" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2950 3800 3150
+$Comp
+L Device:D_Zener D2
+U 1 1 5E59DDAF
+P 6000 3600
+F 0 "D2" V 5954 3679 50  0000 L CNN
+F 1 "SS34" V 6045 3679 50  0000 L CNN
+F 2 "symbols:D_3220_8050Metric_Pad2.65x5.15mm_HandSolder" H 6000 3600 50  0001 C CNN
+F 3 "~" H 6000 3600 50  0001 C CNN
+	1    6000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L symbols:L L2
+U 1 1 5E59DDB6
+P 6350 3350
+F 0 "L2" V 6540 3350 50  0000 C CNN
+F 1 "47uH" V 6449 3350 50  0000 C CNN
+F 2 "" H 6350 3350 50  0001 C CNN
+F 3 "~" H 6350 3350 50  0001 C CNN
+	1    6350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L symbols:CP C11
+U 1 1 5E59DDBD
+P 6700 3600
+F 0 "C11" H 6818 3646 50  0000 L CNN
+F 1 "220uF 35V" H 6818 3555 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 6738 3450 50  0001 C CNN
+F 3 "~" H 6700 3600 50  0001 C CNN
+	1    6700 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6000 3750
+Wire Wire Line
+	6000 3450 6000 3350
+Wire Wire Line
+	6000 3350 5750 3350
+Wire Wire Line
+	6000 3350 6200 3350
+Connection ~ 6000 3350
+Wire Wire Line
+	6700 3450 6700 3350
+Wire Wire Line
+	6700 3350 6500 3350
+Wire Wire Line
+	6700 3750 6700 3800
+Connection ~ 6000 3800
+$Comp
+L symbols:R R2
+U 1 1 5E59DDD6
+P 7300 3600
+F 0 "R2" H 7370 3646 50  0000 L CNN
+F 1 "1K 1%" H 7370 3555 50  0000 L CNN
+F 2 "symbols:R_0805" V 7230 3600 50  0001 C CNN
+F 3 "~" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3750 7300 3800
+Wire Wire Line
+	7750 3500 7750 3800
+Wire Wire Line
+	7750 3800 7300 3800
+Connection ~ 7300 3800
+$Comp
+L symbols:C C13
+U 1 1 5E59DDF1
+P 7750 3350
+F 0 "C13" H 7865 3396 50  0000 L CNN
+F 1 "100nF" H 7865 3305 50  0000 L CNN
+F 2 "symbols:C_0805" H 7788 3200 50  0001 C CNN
+F 3 "~" H 7750 3350 50  0001 C CNN
+	1    7750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3800 6700 3800
+Connection ~ 6700 3800
+Wire Wire Line
+	6700 3800 7300 3800
+Wire Wire Line
+	4650 3800 5250 3800
+$Comp
+L symbols:GND #PWR07
+U 1 1 5E5A1CD2
+P 5250 3850
+F 0 "#PWR07" H 5250 3600 50  0001 C CNN
+F 1 "GND" H 5255 3677 50  0000 C CNN
+F 2 "" H 5250 3850 50  0001 C CNN
+F 3 "" H 5250 3850 50  0001 C CNN
+	1    5250 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5250 3800
+Wire Wire Line
+	5250 3800 6000 3800
+Wire Wire Line
+	5250 3800 5250 3550
+Wire Wire Line
+	5250 3850 5250 3800
+Wire Wire Line
+	7000 1600 7000 1800
+Wire Wire Line
+	5750 1600 6700 1600
+Wire Wire Line
+	6700 1600 6700 1800
+Connection ~ 6700 1800
+Wire Wire Line
+	7000 1800 6700 1800
+Connection ~ 7000 1800
+$Comp
+L symbols:+5VP #PWR014
+U 1 1 5E5A99EA
+P 9200 1600
+F 0 "#PWR014" H 9200 1450 50  0001 C CNN
+F 1 "+5VP" H 9215 1773 50  0000 C CNN
+F 2 "" H 9200 1600 50  0001 C CNN
+F 3 "" H 9200 1600 50  0001 C CNN
+	1    9200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:GND #PWR015
+U 1 1 5E5A9B9E
+P 9200 2500
+F 0 "#PWR015" H 9200 2250 50  0001 C CNN
+F 1 "GND" H 9205 2327 50  0000 C CNN
+F 2 "" H 9200 2500 50  0001 C CNN
+F 3 "" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:LM2596S-5 U1
+U 1 1 5E5AD0A6
+P 5250 1700
+F 0 "U1" H 5250 2067 50  0000 C CNN
+F 1 "LM2596S-5" H 5250 1976 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 1450 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5250 1700 50  0001 C CNN
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4900 4650 4900
+$Comp
+L symbols:GND #PWR08
+U 1 1 5E5B879F
+P 5250 5400
+F 0 "#PWR08" H 5250 5150 50  0001 C CNN
+F 1 "GND" H 5255 5227 50  0000 C CNN
+F 2 "" H 5250 5400 50  0001 C CNN
+F 3 "" H 5250 5400 50  0001 C CNN
+	1    5250 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:C C6
+U 1 1 5E5B87A5
+P 4250 4950
+F 0 "C6" H 4365 4996 50  0000 L CNN
+F 1 "100nF" H 4365 4905 50  0000 L CNN
+F 2 "symbols:C_0805" H 4288 4800 50  0001 C CNN
+F 3 "~" H 4250 4950 50  0001 C CNN
+	1    4250 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:CP C3
+U 1 1 5E5B87AC
+P 3800 4950
+F 0 "C3" H 3918 4996 50  0000 L CNN
+F 1 "100uF 50V" H 3800 4850 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 3838 4800 50  0001 C CNN
+F 3 "~" H 3800 4950 50  0001 C CNN
+	1    3800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4800 3800 4700
+Connection ~ 3800 4700
+Wire Wire Line
+	3800 4700 4250 4700
+Wire Wire Line
+	4250 4800 4250 4700
+Connection ~ 4250 4700
+Wire Wire Line
+	4250 4700 4750 4700
+$Comp
+L Device:D_Zener D3
+U 1 1 5E5B87BA
+P 6000 5150
+F 0 "D3" V 5954 5229 50  0000 L CNN
+F 1 "SS34" V 6045 5229 50  0000 L CNN
+F 2 "symbols:D_3220_8050Metric_Pad2.65x5.15mm_HandSolder" H 6000 5150 50  0001 C CNN
+F 3 "~" H 6000 5150 50  0001 C CNN
+	1    6000 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L symbols:L L3
+U 1 1 5E5B87C1
+P 6350 4900
+F 0 "L3" V 6540 4900 50  0000 C CNN
+F 1 "47uH" V 6449 4900 50  0000 C CNN
+F 2 "" H 6350 4900 50  0001 C CNN
+F 3 "~" H 6350 4900 50  0001 C CNN
+	1    6350 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L symbols:CP C12
+U 1 1 5E5B87C8
+P 6700 5150
+F 0 "C12" H 6818 5196 50  0000 L CNN
+F 1 "220uF 35V" H 6818 5105 50  0000 L CNN
+F 2 "symbols:CP_Elec_8x10" H 6738 5000 50  0001 C CNN
+F 3 "~" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5100 5250 5350
+Wire Wire Line
+	4650 5350 5250 5350
+Wire Wire Line
+	4650 4900 4650 5350
+Connection ~ 5250 5350
+Wire Wire Line
+	5250 5350 5250 5400
+Wire Wire Line
+	4650 5350 4250 5350
+Wire Wire Line
+	4250 5100 4250 5350
+Connection ~ 4650 5350
+Wire Wire Line
+	4250 5350 3800 5350
+Wire Wire Line
+	3800 5100 3800 5350
+Connection ~ 4250 5350
+Wire Wire Line
+	5250 5350 6000 5350
+Wire Wire Line
+	6000 5350 6000 5300
+Wire Wire Line
+	6000 5000 6000 4900
+Wire Wire Line
+	6000 4900 5750 4900
+Wire Wire Line
+	6000 4900 6200 4900
+Connection ~ 6000 4900
+Wire Wire Line
+	6700 5000 6700 4900
+Wire Wire Line
+	6700 4900 6500 4900
+Wire Wire Line
+	6700 5300 6700 5350
+Connection ~ 6000 5350
+$Comp
+L symbols:PWR_FLAG #FLG03
+U 1 1 5E5B87E6
+P 7350 4800
+F 0 "#FLG03" H 7350 4875 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 4974 50  0000 C CNN
+F 2 "" H 7350 4800 50  0001 C CNN
+F 3 "~" H 7350 4800 50  0001 C CNN
+	1    7350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4800 7350 4900
+Wire Wire Line
+	6000 5350 6700 5350
+Wire Wire Line
+	7350 4900 7000 4900
+$Comp
+L symbols:+12V #PWR04
+U 1 1 5E5B87EF
+P 3800 4500
+F 0 "#PWR04" H 3800 4350 50  0001 C CNN
+F 1 "+12V" H 3815 4673 50  0000 C CNN
+F 2 "" H 3800 4500 50  0001 C CNN
+F 3 "" H 3800 4500 50  0001 C CNN
+	1    3800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4700 7000 4900
+Wire Wire Line
+	5750 4700 6700 4700
+Wire Wire Line
+	6700 4700 6700 4900
+Connection ~ 6700 4900
+Wire Wire Line
+	7000 4900 6700 4900
+Connection ~ 7000 4900
+Wire Wire Line
+	3800 4500 3800 4700
+$Comp
+L symbols:LM2596S-3.3 U3
+U 1 1 5E5DCE91
+P 5250 4800
+F 0 "U3" H 5250 5167 50  0000 C CNN
+F 1 "LM2596S-3.3" H 5250 5076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 5300 4550 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:+3V3 #PWR012
+U 1 1 5E5E107A
+P 7000 4700
+F 0 "#PWR012" H 7000 4550 50  0001 C CNN
+F 1 "+3V3" H 7015 4873 50  0000 C CNN
+F 2 "" H 7000 4700 50  0001 C CNN
+F 3 "" H 7000 4700 50  0001 C CNN
+	1    7000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L symbols:PWR_FLAG #FLG04
+U 1 1 5E5E1CEF
+P 8100 2750
+F 0 "#FLG04" H 8100 2825 50  0001 C CNN
+F 1 "PWR_FLAG" H 8100 2924 50  0000 C CNN
+F 2 "" H 8100 2750 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2750 8100 2850
+$Comp
+L symbols:R R1
+U 1 1 5E6427DD
+P 7300 3100
+F 0 "R1" H 7370 3146 50  0000 L CNN
+F 1 "2K2 1%" H 7370 3055 50  0000 L CNN
+F 2 "symbols:R_0805" V 7230 3100 50  0001 C CNN
+F 3 "~" H 7300 3100 50  0001 C CNN
+	1    7300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3450 7300 3350
+Wire Wire Line
+	7300 3350 6950 3350
+Wire Wire Line
+	6950 3350 6950 3150
+Wire Wire Line
+	6950 3150 5750 3150
+Connection ~ 7300 3350
+Wire Wire Line
+	7300 3350 7300 3250
+Wire Wire Line
+	6700 3350 6700 2850
+Wire Wire Line
+	6700 2850 7300 2850
+Wire Wire Line
+	7300 2850 7300 2950
+Connection ~ 6700 3350
+Wire Wire Line
+	7300 2850 7750 2850
+Wire Wire Line
+	7750 2850 7750 3200
+Connection ~ 7300 2850
+Connection ~ 7750 2850
+Wire Wire Line
+	7750 2850 8100 2850
+Wire Wire Line
+	7750 2650 7750 2850
+Text Notes 9700 2350 0    50   ~ 0
+led SMD o chasis?\n
+Text Notes 7050 6650 0    50   ~ 0
+checkear valores de capacitores e inductores para las distintas fuentes LM\n
+$EndSCHEMATC

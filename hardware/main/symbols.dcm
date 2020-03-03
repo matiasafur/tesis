@@ -1,0 +1,344 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +12V
+D Power flag, +12V
+K power-flag
+$ENDCMP
+#
+$CMP +3.3V
+D Power flag, +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +3V3
+D Power flag, +3.3V
+K power-flag
+$ENDCMP
+#
+$CMP +4V
+D Power flag, +4V
+K power-flag
+$ENDCMP
+#
+$CMP +5V
+D Power symbol creates a global label with name "+5V"
+K power-flag
+$ENDCMP
+#
+$CMP +5VP
+D Power flag, +5VP
+K power-flag
+$ENDCMP
+#
+$CMP 1N4148WS
+D 75V 0.15A Fast switching Diode, SOD-323
+K diode
+F https://www.vishay.com/docs/85751/1n4148ws.pdf
+$ENDCMP
+#
+$CMP 1N4448WS
+D 75V 0.15A Small Signal Fast switching Diode, SOD-323
+K diode
+F https://www.vishay.com/docs/81387/1n4448ws.pdf
+$ENDCMP
+#
+$CMP AD8610
+D Single Precision, Very Low Noise, Low Input Bias Current, Wide Bandwidth JFET Operational Amplifiers, SOIC-8
+K single opamp
+F http://www.analog.com/media/en/technical-documentation/data-sheets/AD8610_8620.pdf
+$ENDCMP
+#
+$CMP Battery_Cell
+D Single-cell battery
+K battery cell
+F ~
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CD74HC4067SM
+D High-Speed CMOS Logic 16-Channel Analog Multiplexer/Demultiplexer, SSOP-24
+K multiplexer demultiplexer mux demux
+F http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf
+$ENDCMP
+#
+$CMP CH340G
+D USB serial converter, UART, SOIC-16
+K USB UART Serial Converter Interface
+F http://www.datasheet5.com/pdf-local-2195953
+$ENDCMP
+#
+$CMP CP
+D Polarized capacitor
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP CP1
+D Polarized capacitor, US symbol
+K cap capacitor
+F ~
+$ENDCMP
+#
+$CMP Conn_01x03_Male
+D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x04_Male
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_01x06_Male
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_02x05_Odd_Even
+D Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+$CMP Crystal
+D Two pin crystal
+K quartz ceramic resonator oscillator
+F ~
+$ENDCMP
+#
+$CMP D
+D Diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP D_Zener
+D Zener diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP GND
+D Power symbol creates a global label with name "GND" , ground
+K power-flag
+$ENDCMP
+#
+$CMP L
+D Inductor
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP LED
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
+$CMP LED_ARGB
+D RGB LED, anode/red/green/blue
+K LED RGB diode
+F ~
+$ENDCMP
+#
+$CMP LF155
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF156
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF256
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF257
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF355
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF356
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LF357
+D Single JFET Input Operational Amplifiers, DIP-8/SOIC-8
+K single jfet opamp
+F http://www.ti.com/lit/ds/symlink/lf357.pdf
+$ENDCMP
+#
+$CMP LM2596S-12
+D 12V 3A Step-Down Voltage Regulator, TO-263
+K Step-Down Voltage Regulator 12V 3A
+F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+$CMP LM2596S-3.3
+D 3.3V 3A Step-Down Voltage Regulator, TO-263
+K Step-Down Voltage Regulator 3.3V 3A
+F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+$CMP LM2596S-5
+D 5V 3A Step-Down Voltage Regulator, TO-263
+K Step-Down Voltage Regulator 5V 3A
+F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+$CMP LM2596S-ADJ
+D Adjustable 3A Step-Down Voltage Regulator, TO-263
+K Step-Down Voltage Regulator Adjustable 3A
+F http://www.ti.com/lit/ds/symlink/lm2596.pdf
+$ENDCMP
+#
+$CMP LM2937xMP
+D 500-mA Low Dropout Regulator, SOT-223
+K Voltage Regulator Low Dropuout Positive LDO
+F http://www.ti.com/lit/ds/symlink/lm2937.pdf
+$ENDCMP
+#
+$CMP LM741
+D Operational Amplifier, DIP-8/TO-99-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/lm741.pdf
+$ENDCMP
+#
+$CMP LPC1763FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 256KB flash, 64KB RAM
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1764FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 128KB flash, 32KB RAM, Ethernet, USB
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1765FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 256KB flash, 64KB RAM, USB
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1766FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 256KB flash, 64KB RAM, Ethernet, USB
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1767FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 512KB flash, 64KB RAM, Ethernet
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1768FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 512KB flash, 64KB RAM, Ethernet, USB
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LPC1769FBD100
+D 32-bit ARM Cortex-M3 microcontroller, 512KB flash, 64KB RAM, Ethernet, USB
+K ARM, 32-bit, Cortex-M3, M3, NXP, microcontroller
+F http://www.nxp.com/documents/data_sheet/LPC1769_68_67_66_65_64_63.pdf
+$ENDCMP
+#
+$CMP LT1129-3.3_SOT223
+D 700mA Micropower Low drop-out regulator, Fixed Output 3.3V, SOT-223
+K REGULATOR LDO fixed positive
+F http://cds.linear.com/docs/en/datasheet/112935ff.pdf
+$ENDCMP
+#
+$CMP LT1129-5.0_SOT223
+D 700mA Micropower Low drop-out regulator, Fixed Output 5.0V, SOT-223
+K REGULATOR LDO Fixed Positive
+F http://cds.linear.com/docs/en/datasheet/112935ff.pdf
+$ENDCMP
+#
+$CMP PWR_FLAG
+D Special symbol for telling ERC where power comes from
+K power-flag
+F ~
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP R_POT
+D Potentiometer
+K resistor variable
+F ~
+$ENDCMP
+#
+$CMP SPX2920M3-3.3_SOT223
+D 400mA Low drop-out regulator, Fixed Output 3.3V, SOT-223
+K REGULATOR LDO 3.3V
+F http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf
+$ENDCMP
+#
+$CMP SPX2920M3-5.0_SOT223
+D 400mA Low drop-out regulator, Fixed Output 5V, SOT-223
+K REGULATOR LDO 5V
+F http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf
+$ENDCMP
+#
+$CMP SW_Push
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+$CMP Screw_Terminal_01x02
+D Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
+$CMP TL061
+D Single Low-Power JFET-Input Operational Amplifiers, DIP-8/SOIC-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/tl061.pdf
+$ENDCMP
+#
+$CMP TL071
+D Single Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8
+K singel opamp
+F http://www.ti.com/lit/ds/symlink/tl071.pdf
+$ENDCMP
+#
+$CMP TL081
+D Single JFET-Input Operational Amplifiers, DIP-8/SOIC-8
+K single opamp
+F http://www.ti.com/lit/ds/symlink/tl081.pdf
+$ENDCMP
+#
+#End Doc Library

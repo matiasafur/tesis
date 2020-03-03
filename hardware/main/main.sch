@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+LIBS:main-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3000 1300 850  550 
+U 5E3F3749
+F0 "alimentacion" 50
+F1 "alimentacion.sch" 50
+$EndSheet
+$Sheet
+S 7200 1300 850  750 
+U 5E4F580B
+F0 "multiplexor" 50
+F1 "multiplexor.sch" 50
+F2 "ADC0_0" O L 7200 1450 50 
+F3 "MUX_SEL0" I L 7200 1550 50 
+F4 "MUX_SEL1" I L 7200 1650 50 
+F5 "MUX_SEL2" I L 7200 1750 50 
+F6 "MUX_SEL3" I L 7200 1850 50 
+$EndSheet
+$Sheet
+S 7200 2300 850  600 
+U 5E7F6C71
+F0 "microSD" 50
+F1 "microSD.sch" 50
+F2 "SD_CS" I L 7200 2450 50 
+F3 "SD_MISO" O L 7200 2550 50 
+F4 "SD_MOSI" I L 7200 2650 50 
+F5 "SD_CLK" I L 7200 2750 50 
+$EndSheet
+$Sheet
+S 7200 3150 900  500 
+U 5E54A6EB
+F0 "comunicacion" 50
+F1 "comunicacion.sch" 50
+F2 "RST" I L 7200 3500 50 
+F3 "RXD" U L 7200 3300 50 
+F4 "TXD" U L 7200 3400 50 
+$EndSheet
+$Sheet
+S 3000 2150 850  300 
+U 5E4C9B47
+F0 "usb_driver" 50
+F1 "usb_driver.sch" 50
+F2 "RXD" U R 3850 2350 50 
+F3 "TXD" U R 3850 2250 50 
+$EndSheet
+$Sheet
+S 4950 1250 1350 2550
+U 5E3B4E45
+F0 "mcu" 50
+F1 "mcu.sch" 50
+F2 "SSP1_SSEL" O R 6300 2450 50 
+F3 "SSP1_SCK" O R 6300 2750 50 
+F4 "SSP1_MISO" I R 6300 2550 50 
+F5 "SSP1_MOSI" O R 6300 2650 50 
+F6 "ADC0_0" I R 6300 1450 50 
+F7 "MUX_SEL2" O R 6300 1750 50 
+F8 "MUX_SEL1" O R 6300 1650 50 
+F9 "MUX_SEL0" O R 6300 1550 50 
+F10 "COM_TXD1" O R 6300 3300 50 
+F11 "COM_RXD1" I R 6300 3400 50 
+F12 "MUX_SEL3" O R 6300 1850 50 
+F13 "COM_RST" O R 6300 3500 50 
+F14 "ISP_TXD0" O L 4950 2350 50 
+F15 "ISP_RXD0" I L 4950 2250 50 
+$EndSheet
+Wire Wire Line
+	6300 1450 7200 1450
+Wire Wire Line
+	7200 1550 6300 1550
+Wire Wire Line
+	6300 1650 7200 1650
+Wire Wire Line
+	7200 1750 6300 1750
+Wire Wire Line
+	6300 1850 7200 1850
+Wire Wire Line
+	7200 2450 6300 2450
+Wire Wire Line
+	6300 2550 7200 2550
+Wire Wire Line
+	7200 2650 6300 2650
+Wire Wire Line
+	6300 2750 7200 2750
+Wire Wire Line
+	6300 3300 7200 3300
+Wire Wire Line
+	7200 3400 6300 3400
+Wire Wire Line
+	6300 3500 7200 3500
+Wire Wire Line
+	4950 2250 3850 2250
+Wire Wire Line
+	3850 2350 4950 2350
+$EndSCHEMATC
